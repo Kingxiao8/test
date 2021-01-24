@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .scrollBox{
+            margin: 80px auto;
+            width: 750px;
+            height: 420px;
+            overflow: hidden;
+        }
+        .item{
+            margin-bottom: 10px;
+            padding: 10px;
+            height: 75px;
+            background-color: #f5f5f5;
+        }
+        .p{
+            float: left;
+            width: 100px;
+            height: 75px;
+            background-color: #008c8c;
+        }
+        .item-content{
+            float: right;
+            width: 600px;
+        }
+        .item-content h3{
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollBox">
+        <div class="item">
+            <p class="p" style="background-color: pink;"></p>
+            <div class="item-content">
+                <h3>Hello Mr zhao</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laboriosam? Nostrum at temporibus enim iusto. Numquam nisi sequi </p>
+            </div>
+        </div>
+        <div class="item">
+            <p class="p" style="background-color: rosybrown;"></p>
+            <div class="item-content">
+                <h3>Hello Mr qian</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laboriosam? Nostrum at temporibus enim iusto. Numquam nisi sequi </p>
+            </div>
+        </div>
+        <div class="item">
+            <p class="p" style="background-color: purple;"></p>
+            <div class="item-content">
+                <h3>Hello Mr xun</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laboriosam? Nostrum at temporibus enim iusto. Numquam nisi sequi </p>
+            </div>
+        </div>
+        <div class="item">
+            <p class="p" style="background-color: blue;"></p>
+            <div class="item-content">
+                <h3>Hello Mr li</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laboriosam? Nostrum at temporibus enim iusto. Numquam nisi sequi </p>
+            </div>
+        </div>
+        <div class="item">
+            <p class="p" style="background-color: green;"></p>
+            <div class="item-content">
+                <h3>Hello Mr sun</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laboriosam? Nostrum at temporibus enim iusto. Numquam nisi sequi </p>
+            </div>
+        </div>
+        <div class="item">
+            <p class="p" style="background-color : gray "></p>
+            <div class="item-content">
+                <h3>Hello Mr wei</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laboriosam? Nostrum at temporibus enim iusto. Numquam nisi sequi </p>
+            </div>
+        </div>
+        <div class="item">
+            <p class="p" style="background-color: orange;"></p>
+            <div class="item-content">
+                <h3>Hello Mr wang</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laboriosam? Nostrum at temporibus enim iusto. Numquam nisi sequi </p>
+            </div>
+        </div>
+        <div class="item">
+            <p class="p" style="background-color: red;"></p>
+            <div class="item-content">
+                <h3>Hello Mr zhu</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laboriosam? Nostrum at temporibus enim iusto. Numquam nisi sequi </p>
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="./jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // setInterval(() => {
+            //     $('.item').last().prependTo('.scrollBox')
+            // }, 3000);
+            setInterval(() => {
+                $('.item').last().fadeTo(0,0).hide().prependTo('.scrollBox').slideDown().fadeTo(1000,1)
+            }, 3000);
+        })
+    </script>
+</body>
+</html>
